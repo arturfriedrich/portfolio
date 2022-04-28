@@ -23,8 +23,12 @@ const Title = styled.h1`
     line-height: 83px;
     margin: 0;
     margin-top: -75px;
+    color: #DBD8E3;
+`
+
+const Accent = styled.span`
     position: relative;
-    transition: 600ms;
+    transition: 400ms;
     cursor: default;
 
     color: #DBD8E3;
@@ -55,7 +59,7 @@ const Title = styled.h1`
         opacity: 1;
         height: 100%;
     }
-    
+
     &:hover{
         color: #FFB703 !important;
     }
@@ -66,6 +70,7 @@ const SubTitle = styled.h2`
     font-size: 32px;
     line-height: 38px;
     margin: 0;
+    cursor: default;
 
     color: #DBD8E3;
 `
@@ -79,7 +84,7 @@ export default function Hero() {
     return (
             <Container>
                 <Group>
-                    <Title>Hello.<br />I am Artúr</Title>
+                    <Title>Hello.<br />I am <Accent>Artúr</Accent></Title>
                     <SubTitle>Student and Front End Developer</SubTitle>
                 </Group>
                 <Image src={require("../images/misc/peep.png")} />

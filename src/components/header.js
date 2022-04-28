@@ -18,7 +18,6 @@ const Group = styled.div`
 
     &:first-of-type {
         margin: 0 auto;
-        color: red;
     }
 
     &:last-of-type {
@@ -35,7 +34,6 @@ const Logo = styled.p`
     display: inline-block;
     position: relative;
     cursor: pointer;
-
     color: #DBD8E3;
 
     &:after {
@@ -46,7 +44,7 @@ const Logo = styled.p`
         height: 3px;
         bottom: -3px;
         left: 0;
-        background-color: #DBD8E3;
+        background-color: #FFB703;
         transform-origin: bottom right;
         transition: transform 0.5s ease-out;
       }
@@ -65,7 +63,6 @@ const Menu = styled.p`
     display: inline-block;
     position: relative;
     cursor: pointer;
-
     color: #DBD8E3;
 
     &:after {
@@ -76,7 +73,7 @@ const Menu = styled.p`
         height: 3px;
         bottom: -3px;
         left: 0;
-        background-color: #DBD8E3;
+        background-color: #FFB703;
         transform-origin: bottom right;
         transition: transform 0.5s ease-out;
       }
