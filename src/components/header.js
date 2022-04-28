@@ -92,7 +92,11 @@ const Icon = styled.img`
     filter: grayscale(1) invert(1);
     height: 24px;
     width: 24px;
-    margin: 10px;
+    margin: 20px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `
 
 const Link = styled.a``
@@ -117,7 +121,6 @@ export default function Header() {
                     <Link href="https://www.linkedin.com/in/friedrich-art%C3%BAr-6840201a1/">
                         <Icon src={require("../images/icons/icons8-linkedin-24.png")} />
                     </Link>
-                    <Icon src={require("../images/icons/icons8-moon-24.png")} />
                 </Group>
             </Container>
     )

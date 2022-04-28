@@ -1,9 +1,12 @@
 import React from "react"
 
-import { Header } from "../components"
+import { Header, Hero } from "../components"
 
 export default function Home() {
     return (
-        <Header />
+        <>
+            <Header />
+            <Hero />
+        </>
     )
 }
