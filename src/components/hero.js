@@ -5,6 +5,7 @@ import { Link as ReachRouterLink } from "react-router-dom"
 // styled components
 const Container = styled.div`
     display: flex;
+    height: 75px;
     background-color: #2A2438;
     justify-content: space-between;
     align-items: center;
