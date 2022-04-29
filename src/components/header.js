@@ -34,7 +34,7 @@ const Logo = styled.p`
     display: inline-block;
     position: relative;
     cursor: pointer;
-    color: white;
+    color: #DBD8E3;
 
     &:after {
         content: '';
