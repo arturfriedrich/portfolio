@@ -76,6 +76,8 @@ const SubTitle = styled.h2`
 `
 
 const Image = styled.img`
+    width: 320px;
+    height: 432px;
     margin-top: -75px;
     margin-right: 100px;
 `

@@ -49,7 +49,7 @@ const Title = styled.p`
     font-size: 64px;
     line-height: 27px;
     letter-spacing: 0.18em;
-    margin: 0px;
+    margin-top: 10px;
 
     color: #DBD8E3;
 `
