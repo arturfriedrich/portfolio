@@ -45,7 +45,7 @@ const Button = styled.a`
     display: flex;
     align-items: center;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 60px;
     cursor: pointer;
 
     &:hover {
