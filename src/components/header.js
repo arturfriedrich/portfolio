@@ -35,24 +35,11 @@ const Logo = styled.p`
     position: relative;
     cursor: pointer;
     color: white;
+    transition: 300ms;
 
-    &:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 3px;
-        bottom: -3px;
-        left: 0;
-        background-color: #FFB703;
-        transform-origin: bottom right;
-        transition: transform 0.5s ease-out;
-      }
-      
-      &:hover:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-      }
+    &:hover {
+        color: #FFB703;
+    }
 `
 
 const Menu = styled.p`

@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Header, Hero, AboutHome } from "../components"
+import { Header, Hero, AboutHome, ProjectsHome, Footer } from "../components"
 
 export default function Home() {
     return (
@@ -8,6 +8,8 @@ export default function Home() {
             <Header />
             <Hero />
             <AboutHome />
+            <ProjectsHome />
+            <Footer />
         </>
     )
 }

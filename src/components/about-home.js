@@ -7,7 +7,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     background-color: #2A2438;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #2A2438;
@@ -25,8 +25,8 @@ const Group = styled.div`
 
 const TextBox = styled.div`
     width: 500px;
-    height: 250px;
-    background: #DBD8E3;
+    height: 280px;
+    background-color: #5C5470;
     border-radius: 25px;
     padding: 25px;
     display: flex;
@@ -41,6 +41,9 @@ const TextBox = styled.div`
     &:hover {
         transform: scale(1.01);
         border: 2px solid #FFB703;
+        box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
     }
 `
 
@@ -48,8 +51,8 @@ const Title = styled.p`
     font-weight: 800;
     font-size: 64px;
     line-height: 27px;
-    letter-spacing: 0.18em;
-    margin-top: 10px;
+    letter-spacing: 0.1em;
+    margin-top: 100px;
 
     color: #DBD8E3;
 `
@@ -58,12 +61,12 @@ const Text = styled.p`
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
-    color: #2A2438;
+    color: #DBD8E3;
 `
 
 const Image = styled.img`
-    width: 253.26px;
-    height: 450px;
+    width: 281px;
+    height: 500px;
 `
 
 const Link = styled.a``
