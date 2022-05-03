@@ -73,8 +73,6 @@ const Image = styled.img`
 const Link = styled.a``
 
 export default function AboutHome() {
-    // const { ref } = useParallax({ speed: 10 });
-
     return (
         <ParallaxProvider>
             <Container>
@@ -85,7 +83,7 @@ export default function AboutHome() {
                     <Parallax translateX={["-300px", '150px']} easing='easeOutQuad' opacity={[0, 1]}>
                         <Image src={require("../images/misc/peep-standing.png")} />
                     </Parallax>
-                    <Parallax translateX={["250px", '-20px']} easing='easeOutQuad' opacity={[0, 1]}>
+                    <Parallax translateX={["250px", '-20px']} easing='easeOutQuad' >
                         <TextBox>
                             <Text>
                                 My name is Artúr Friedrich, I started learning web developemt  in February of 2021.<br /><br /> 
