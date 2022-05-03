@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Parallax, ParallaxProvider } from "react-scroll-parallax"
 import styled from "styled-components"
 import { Link as ReachRouterLink } from "react-router-dom"
 
@@ -72,19 +73,29 @@ const Image = styled.img`
 const Link = styled.a``
 
 export default function AboutHome() {
+    // const { ref } = useParallax({ speed: 10 });
+
     return (
+        <ParallaxProvider>
             <Container>
-                <Title>About</Title>
+                <Parallax translateX={["-800px", '200px']}>
+                    <Title>About</Title>
+                </Parallax>
                 <Group>
-                    <Image src={require("../images/misc/peep-standing.png")} />
-                    <TextBox>
-                        <Text>
-                            My name is Artúr Friedrich, I started learning web developemt  in February of 2021.<br /><br /> 
-                            I write programs for 4 years not and I am currently a Computer Science student at the 
-                            University of Győr, and want to get some experience working in the tech industry.
-                        </Text>
-                    </TextBox>
+                    <Parallax translateX={["-300px", '300px']}>
+                        <Image src={require("../images/misc/peep-standing.png")} />
+                    </Parallax>
+                    <Parallax translateX={["250px", '-300px']}>
+                        <TextBox>
+                            <Text>
+                                My name is Artúr Friedrich, I started learning web developemt  in February of 2021.<br /><br /> 
+                                I write programs for 4 years not and I am currently a Computer Science student at the 
+                                University of Győr, and want to get some experience working in the tech industry.
+                            </Text>
+                        </TextBox>
+                    </Parallax>
                 </Group>
             </Container>
+        </ParallaxProvider>
     )
 }

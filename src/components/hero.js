@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import { Parallax, ParallaxProvider } from "react-scroll-parallax"
 import { Link as ReachRouterLink } from "react-router-dom"
 
 // styled components
@@ -84,12 +85,31 @@ const Image = styled.img`
 
 export default function Hero() {
     return (
+        <ParallaxProvider>
             <Container>
-                <Group>
-                    <Title>Hello.<br />I am <Accent>Artúr</Accent></Title>
-                    <SubTitle>Student and Front End Developer</SubTitle>
-                </Group>
-                <Image src={require("../images/misc/peep.png")} />
+                <Parallax translateX={["200px", '-200px']}>
+                    <Group>
+                        <Title>Hello.<br />I am <Accent>Artúr</Accent></Title>
+                        <SubTitle>Student and Front End Developer</SubTitle>
+                    </Group>
+                </Parallax>
+                <Parallax translateX={["-200px", '200px']}>
+                    <Image src={require("../images/misc/peep.png")} />
+                </Parallax>
             </Container>
+        </ParallaxProvider>
     )
 }
+
+/*
+@keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+    }
+
+    animation: 1s ease-out 0s 1 slideInLeft;
+*/

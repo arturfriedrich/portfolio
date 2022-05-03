@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import { Link as ReachRouterLink } from "react-router-dom"
+import { Parallax, ParallaxProvider } from "react-scroll-parallax"
 
 import ProjectCard from "./project-card"
 import { ProjectsData } from "../data/projects"
@@ -67,12 +68,18 @@ export default function ProjectsHome() {
     })
 
     return (
+        <ParallaxProvider>
             <Container>
-                <Title>Projects</Title>
-                <Group>
-                    {cards}
-                </Group>
+                <Parallax translateX={["800px", '-200px']}>
+                    <Title>Projects</Title>
+                </Parallax>
+                <Parallax translateY={["800px", '-800px']}>
+                    <Group>
+                        {cards}
+                    </Group>
+                </Parallax>
                 <Button>More Projects</Button>
             </Container>
+        </ParallaxProvider>
     )
 }
