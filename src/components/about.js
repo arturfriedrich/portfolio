@@ -64,6 +64,17 @@ const Title = styled.p`
     margin-top: 100px;
 
     color: #DBD8E3;
+
+    @keyframes fadeIn {
+        0% {
+        opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    animation: 2s ease-out 0s 1 fadeIn;
 `
 
 const Text = styled.p`
