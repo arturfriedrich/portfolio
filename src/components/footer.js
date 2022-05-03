@@ -20,13 +20,13 @@ const Group = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
 `
 
 const Link = styled.a`
     color: white;
     text-decoration: none;
     position: relative;
+    margin: 0px 50px;
 
     &:after {
         content: '';

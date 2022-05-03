@@ -7,6 +7,8 @@ const Container = styled.div`
     background: #5C5470;
     border-radius: 10px;
 
+    margin: 0 50px;
+
     transition: 300ms;
 
     &:hover {

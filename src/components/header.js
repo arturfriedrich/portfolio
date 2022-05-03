@@ -9,6 +9,17 @@ const Container = styled.div`
     background-color: #2A2438;
     justify-content: space-between;
     align-items: center;
+
+    @keyframes slideInDown {
+            0% {
+            transform: translateY(-100%);
+            }
+            100% {
+            transform: translateX(0);
+            }
+        }
+
+    animation: 1s ease-out 0s 1 slideInDown;
 `
 
 const Group = styled.div`

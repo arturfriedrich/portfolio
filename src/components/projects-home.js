@@ -19,7 +19,6 @@ const Container = styled.div`
 
 const Group = styled.div`
     display: flex;
-    gap: 100px;
 `
 
 const Title = styled.h1`
@@ -70,15 +69,17 @@ export default function ProjectsHome() {
     return (
         <ParallaxProvider>
             <Container>
-                <Parallax translateX={["800px", '-200px']}>
+                <Parallax translateX={["800px", '-20px']} easing='easeOutQuad' opacity={[0, 1]}>
                     <Title>Projects</Title>
                 </Parallax>
-                <Parallax translateY={["800px", '-800px']}>
+                <Parallax translateY={["750px", '-250px']} easing='easeOutQuad' opacity={[0, 1]}>
                     <Group>
                         {cards}
                     </Group>
                 </Parallax>
-                <Button>More Projects</Button>
+                <Parallax opacity={[.5, 1]}>
+                    <Button>More Projects</Button>
+                </Parallax>
             </Container>
         </ParallaxProvider>
     )

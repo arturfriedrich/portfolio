@@ -78,14 +78,14 @@ export default function AboutHome() {
     return (
         <ParallaxProvider>
             <Container>
-                <Parallax translateX={["-800px", '200px']}>
+                <Parallax translateX={["-800px", '20px']} easing='easeOutQuad' opacity={[0, 1]}>
                     <Title>About</Title>
                 </Parallax>
                 <Group>
-                    <Parallax translateX={["-300px", '300px']}>
+                    <Parallax translateX={["-300px", '150px']} easing='easeOutQuad' opacity={[0, 1]}>
                         <Image src={require("../images/misc/peep-standing.png")} />
                     </Parallax>
-                    <Parallax translateX={["250px", '-300px']}>
+                    <Parallax translateX={["250px", '-20px']} easing='easeOutQuad' opacity={[0, 1]}>
                         <TextBox>
                             <Text>
                                 My name is Artúr Friedrich, I started learning web developemt  in February of 2021.<br /><br /> 

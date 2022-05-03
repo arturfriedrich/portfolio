@@ -25,6 +25,17 @@ const Title = styled.h1`
     margin: 0;
     margin-top: -75px;
     color: #DBD8E3;
+
+    @keyframes slideInRight {
+        0% {
+        transform: translateX(-100%);
+        }
+        100% {
+        transform: translateX(0);
+        }
+    }
+
+    animation: 1s ease-out 0s 1 slideInRight;
 `
 
 const Accent = styled.span`
@@ -74,6 +85,17 @@ const SubTitle = styled.h2`
     cursor: default;
 
     color: #DBD8E3;
+
+    @keyframes slideInRight {
+        0% {
+        transform: translateX(-100%);
+        }
+        100% {
+        transform: translateX(0);
+        }
+    }
+
+    animation: 1s ease-out 0s 1 slideInRight;
 `
 
 const Image = styled.img`
@@ -81,6 +103,17 @@ const Image = styled.img`
     height: 432px;
     margin-top: -75px;
     margin-right: 100px;
+
+    @keyframes slideInLeft {
+        0% {
+        transform: translateX(100%);
+        }
+        100% {
+        transform: translateX(0);
+        }
+    }
+
+    animation: 1s ease-out 0s 1 slideInLeft;
 `
 
 export default function Hero() {
@@ -100,16 +133,3 @@ export default function Hero() {
         </ParallaxProvider>
     )
 }
-
-/*
-@keyframes slideInLeft {
-        0% {
-          transform: translateX(-100%);
-        }
-        100% {
-          transform: translateX(0);
-        }
-    }
-
-    animation: 1s ease-out 0s 1 slideInLeft;
-*/
