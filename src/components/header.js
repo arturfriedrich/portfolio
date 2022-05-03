@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import { Link as ReachRouterLink } from "react-router-dom"
+import { Link  } from "react-router-dom"
+
+import * as ROUTES from "../constants/routes"
 
 // styled components
 const Container = styled.div`
@@ -94,28 +96,30 @@ const Icon = styled.img`
     }
 `
 
-const Link = styled.a``
+const CustomLink = styled.a``
 
 export default function Header() {
     return (
             <Container>
-                <Logo>Friedrich Artúr</Logo>
+                <Link to={ROUTES.HOME}>
+                    <Logo>Friedrich Artúr</Logo>
+                </Link>
                 <Group>
-                    <Menu>About</Menu>
-                    <Menu>Projects</Menu>
-                    <Menu>Resume</Menu>
-                    <Menu>Contact</Menu>
+                    <Link to={ROUTES.ABOUT}><Menu>About</Menu></Link>
+                    <Link to={ROUTES.PROJECTS}><Menu>Projects</Menu></Link>
+                    <Link to={ROUTES.RESUME}><Menu>Resume</Menu></Link>
+                    <Link to={ROUTES.CONTACT}><Menu>Contact</Menu></Link>     
                 </Group>
                 <Group>
-                    <Link href="https://github.com/arturfriedrich">
+                    <CustomLink href="https://github.com/arturfriedrich">
                         <Icon src={require("../images/icons/icons8-github-24.png")} />
-                    </Link>
-                    <Link href="https://twitter.com/arturfriedrich7">
+                    </CustomLink>
+                    <CustomLink href="https://twitter.com/arturfriedrich7">
                         <Icon src={require("../images/icons/icons8-twitter-24.png")} />
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/friedrich-art%C3%BAr-6840201a1/">
+                    </CustomLink>
+                    <CustomLink href="https://www.linkedin.com/in/friedrich-art%C3%BAr-6840201a1/">
                         <Icon src={require("../images/icons/icons8-linkedin-24.png")} />
-                    </Link>
+                    </CustomLink>
                 </Group>
             </Container>
     )

@@ -1,9 +1,21 @@
 import React from "react"
+import { BrowserRouter as Router, Switch } from "react-router-dom"
+import { Route } from "react-router-dom"
+import * as ROUTES from "./constants/routes"
 
-import { Home } from "./pages"
+import { Home, About } from "./pages"
 
 export default function App() {
     return (
-        <Home />
+        <Router>
+        <Switch>
+            <Route path={ROUTES.ABOUT}>
+                <About />
+            </Route>
+            <Route path={ROUTES.HOME}>
+                <Home />
+            </Route>
+        </Switch>
+    </Router>
     )
 }
