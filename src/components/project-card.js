@@ -44,6 +44,7 @@ const Description = styled.p`
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    height: 100px;
 
     color: #FFFFFF;
 `
@@ -57,6 +58,8 @@ const Button = styled.a`
 
     background: #352F44;
     border-radius: 20px;
+
+    margin-bottom: 10px;
 
     font-weight: 600;
     font-size: 14px;

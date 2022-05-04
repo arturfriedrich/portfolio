@@ -26,4 +26,31 @@ export const ProjectsData = [
         liveDemoUrl: "https://arturfriedrich.github.io/quizzical-app/",
         gitHubUrl: "https://github.com/arturfriedrich/quizzical-app"
     },
+    {
+        id: 3,
+        technology: "javascript",
+        image: require("../images/misc/role-play.png"),
+        title: "Role Play Game",
+        description: "Simple RPG game, you can fight with several monsters and defeat them with the power of numbers. Built with JavaScript.",
+        liveDemoUrl: "https://arturfriedrich.github.io/role-play/",
+        gitHubUrl: "https://github.com/arturfriedrich/role-play"
+    },
+    {
+        id: 4,
+        technology: "javascript",
+        image: require("../images/misc/snake.png"),
+        title: "Snake Game",
+        description: "Simple version of the Snake Game, written in HTML, CSS and JavaScript.",
+        liveDemoUrl: "https://arturfriedrich.github.io/snakeGame/",
+        gitHubUrl: "https://github.com/arturfriedrich/snakeGame"
+    },
+    {
+        id: 5,
+        technology: "javascript",
+        image: require("../images/misc/pacman.png"),
+        title: "Pacman Game",
+        description: "This is the pure JavaScript version of the pacman game.",
+        liveDemoUrl: "https://arturfriedrich.github.io/pacmanJS/",
+        gitHubUrl: "https://github.com/arturfriedrich/pacmanJS"
+    },
 ]

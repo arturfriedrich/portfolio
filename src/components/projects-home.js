@@ -58,12 +58,14 @@ const Button = styled.a`
 
 export default function ProjectsHome() {
     const cards = ProjectsData.map(item => {
-        return (
-            <ProjectCard
-                key={item.id}
-                {...item}
-            />
-        )
+        if ( item.id < 3 ) {
+            return (
+                <ProjectCard
+                    key={item.id}
+                    {...item}
+                />
+            )
+        }
     })
 
     return (
