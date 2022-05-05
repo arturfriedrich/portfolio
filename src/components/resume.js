@@ -1,86 +1,101 @@
 import React from "react"
 import styled from "styled-components"
+import { Parallax, ParallaxProvider } from "react-scroll-parallax"
 
 const Container = styled.div`
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        "nev elerhetosegek"
-        "bemutatkozas technologiak"
-        "tanulmanyok tanulmanyok"
-        "minositesek minositesek"
-        "hobbi tapasztalat"; 
+    display: flex;
+    flex-direction: column;
+    background-color: #2A2438;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A2438;
 `
 
-const Tanulmanyok = styled.div`
-    background: #352F44;
-    border-radius: 20px;
-    grid-area: tanulmanyok;
-    height: 150px;
+const Group = styled.div`
+    display: flex;
 `
 
-const Minositesek = styled.div`
-    background: #352F44;
-    border-radius: 20px;
-    grid-area: minositesek;
-    height: 150px;
-`
-
-const Nev = styled.div`
-    background: #352F44;
-    border-radius: 20px;
-    grid-area: nev;
+const Box = styled.div`
+    width: 500px;
     height: 300px;
-`
 
-const Elerhetosegek = styled.div`
     background: #352F44;
     border-radius: 20px;
-    grid-area: elerhetosegek;
-    height: 300px;
+
+    margin: 20px;
+
+    transition: 300ms;
+
+    &:hover {
+        transform: scale(1.01);
+        border: 2px solid #FFB703;
+        box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+    }
 `
 
-const Bemutatkozas = styled.div`
+const DoubleBox = styled.div`
+    width: 1040px;
+    height: 300px;
+
     background: #352F44;
     border-radius: 20px;
-    grid-area: bemutatkozas;
-    height: 300px;
+
+    margin: 20px;
+
+    transition: 300ms;
+
+    &:hover {
+        transform: scale(1.01);
+        border: 2px solid #FFB703;
+        box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+    }
 `
 
-const Technologiak = styled.div`
-    background: #352F44;
-    border-radius: 20px;
-    grid-area: technologiak;
-    height: 300px;
-`
+const Title = styled.p``
 
-const Hobbi = styled.div`
-    background: #352F44;
-    border-radius: 20px;
-    grid-area: hobbi;
-    height: 300px;
-`
+const Subtitle = styled.p``
 
-const Tapasztalat = styled.div`
-    background: #352F44;
-    border-radius: 20px;
-    grid-area: tapasztalat;
-    height: 300px;
-`
+const Text = styled.p``
 
 export default function Resume() {
     return (
-        <Container>
-            <Nev></Nev>
-            <Elerhetosegek></Elerhetosegek>
-            <Bemutatkozas></Bemutatkozas>
-            <Technologiak></Technologiak>
-            <Tanulmanyok></Tanulmanyok>
-            <Minositesek></Minositesek>
-            <Hobbi></Hobbi>
-            <Tapasztalat></Tapasztalat>
-        </Container>
+        <ParallaxProvider>
+            <Container>
+                <Group>
+                    <Parallax translateX={["200px", '-140px']}>
+                        <Box></Box>
+                    </Parallax>
+                    <Parallax translateX={["-280px", '200px']}>
+                        <Box></Box>
+                    </Parallax>
+                </Group>
+                <Group>
+                    <Parallax translateX={["100px", '-300px']}>
+                        <Box></Box>
+                    </Parallax>
+                    <Parallax translateX={["-120px", '380px']}>
+                        <Box></Box>
+                    </Parallax>
+                </Group>
+                <Group>
+                    <DoubleBox></DoubleBox>
+                </Group>
+                <Group>
+                    <DoubleBox></DoubleBox>
+                </Group>
+                <Group>
+                    <Parallax translateX={["-800px", '700px']}>
+                        <Box></Box>
+                    </Parallax>
+                    <Parallax translateX={["800px", '-700px']}>
+                        <Box></Box>
+                    </Parallax>
+                </Group>
+            </Container>
+        </ParallaxProvider>
     )
 }

@@ -3,12 +3,15 @@ import { BrowserRouter as Router, Switch } from "react-router-dom"
 import { Route } from "react-router-dom"
 import * as ROUTES from "./constants/routes"
 
-import { Home, About, Projects, Resume } from "./pages"
+import { Home, About, Projects, Resume, Contact } from "./pages"
 
 export default function App() {
     return (
         <Router>
         <Switch>
+            <Route path={ROUTES.CONTACT}>
+                <Contact />
+            </Route>
             <Route path={ROUTES.RESUME}>
                 <Resume />
             </Route>
