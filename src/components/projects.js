@@ -16,16 +16,16 @@ const Container = styled.div`
 const Group = styled.div`
     display: flex;
 
-    @keyframes slideInUp {
+    @keyframes fadeIn {
         0% {
-        transform: translateY(100%);
+        opacity: 0;
         }
         100% {
-        transform: translateX(0);
+            opacity: 1;
         }
     }
 
-    &:first-of-type { animation: 1s ease-out 0s 1 slideInUp };
+    animation: 2s ease-out 0s 1 fadeIn;
 `
 
 const Title = styled.h1`

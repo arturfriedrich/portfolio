@@ -73,7 +73,6 @@ const DoubleBox = styled.div`
 const Title = styled.p`
     font-weight: 800;
     font-size: 64px;
-    line-height: 27px;
 
     margin: 0;
     margin-left: 20px;
@@ -195,99 +194,97 @@ const Tapasztalat = styled(SectionTitle)`
 
 export default function Resume() {
     return (
-        <ParallaxProvider>
-            <Container>
-                <Group>
-                    <Parallax translateX={["480px", '-340px']}>
-                        <Box>
-                            <Title>Friedrich Artúr</Title>
-                            <Subtitle>Student and Front End Developer</Subtitle>
-                        </Box>
-                    </Parallax>
-                    <Parallax translateX={["-560px", '400px']}>
-                        <Box>
-                            <Text>
-                                artur.friedrich.harka@gmail.com <br />
-                                artur#5667 <br />
-                                Győr, Hungary <br />
-                                linkedin.com/friedrich-artur <br />
-                                github.com/friedrichartur
-                            </Text>
-                        </Box>
-                    </Parallax>
-                </Group>
-                <Group>
-                    <Parallax translateX={["100px", '-300px']}>
-                        <Box>
-                            <Summary>
-                                A kreatív desingben megtaláltam mindazt amit számomra az érdekes és 
-                                értékes munkát és tanulást jelent. A változatos problémák és feladatok 
-                                megoldása mellett a felhasználó által látott felület megalkotása is a 
-                                munkafolyamat része így változatos és kihívásokkal teli. Az egyetem és 
-                                iskolákban szerzett tudásomon kívül a kreatív gondolkozásra és alkotási 
-                                vágyra is szükség van, ami számomra igen hívogató.
-                            </Summary>
-                        </Box>
-                    </Parallax>
-                    <Parallax translateX={["-120px", '380px']}>
-                        <Skills>
-                            <Skill>HTML5</Skill>
-                            <Skill>CSS3</Skill>
-                            <Skill>JavaScript ES6</Skill>
-                            <Skill>ReactJS</Skill>
-                            <Skill>TypeScript</Skill>
-                            <Skill>Git</Skill>
-                            <Skill>GitHub</Skill>
-                            <Skill>Python</Skill>
-                            <Skill>C</Skill>
-                            <Skill>C++</Skill>
-                            <Skill>Notion</Skill>
-                            <Skill>Figma</Skill>
-                        </Skills>
-                    </Parallax>
-                </Group>
-                <Group>
-                    <DoubleBox>
-                        <SectionTitle>Tanulmányaim</SectionTitle>
+        <Container>
+            <Group>
+                {/* <Parallax translateX={["480px", '-340px']}> */}
+                    <Box>
+                        <Title>Friedrich Artúr</Title>
+                        <Subtitle>Student and Front End Developer</Subtitle>
+                    </Box>
+                {/* </Parallax> */}
+                {/* <Parallax translateX={["-560px", '400px']}> */}
+                    <Box>
+                        <Text>
+                            artur.friedrich.harka@gmail.com <br />
+                            artur#5667 <br />
+                            Győr, Hungary <br />
+                            linkedin.com/friedrich-artur <br />
+                            github.com/friedrichartur
+                        </Text>
+                    </Box>
+                {/* </Parallax> */}
+            </Group>
+            <Group>
+                {/* <Parallax translateX={["100px", '-300px']}> */}
+                    <Box>
+                        <Summary>
+                            A kreatív desingben megtaláltam mindazt amit számomra az érdekes és 
+                            értékes munkát és tanulást jelent. A változatos problémák és feladatok 
+                            megoldása mellett a felhasználó által látott felület megalkotása is a 
+                            munkafolyamat része így változatos és kihívásokkal teli. Az egyetem és 
+                            iskolákban szerzett tudásomon kívül a kreatív gondolkozásra és alkotási 
+                            vágyra is szükség van, ami számomra igen hívogató.
+                        </Summary>
+                    </Box>
+                {/* </Parallax> */}
+                {/* <Parallax translateX={["-120px", '380px']}> */}
+                    <Skills>
+                        <Skill>HTML5</Skill>
+                        <Skill>CSS3</Skill>
+                        <Skill>JavaScript ES6</Skill>
+                        <Skill>ReactJS</Skill>
+                        <Skill>TypeScript</Skill>
+                        <Skill>Git</Skill>
+                        <Skill>GitHub</Skill>
+                        <Skill>Python</Skill>
+                        <Skill>C</Skill>
+                        <Skill>C++</Skill>
+                        <Skill>Notion</Skill>
+                        <Skill>Figma</Skill>
+                    </Skills>
+                {/* </Parallax> */}
+            </Group>
+            <Group>
+                <DoubleBox>
+                    <SectionTitle>Tanulmányaim</SectionTitle>
+                    <List>
+                        <Item>Széchenyi István Egyetem, Mérnökinformatikus BSc -- 2021. Február -</Item>
+                        <Item>Széchenyi István Gimnázium, Sopron, Érettségi bizonyítvány -- 2014. Szeptember - 2020. Május</Item>
+                    </List>
+                </DoubleBox>
+            </Group>
+            <Group>
+                <DoubleBox>
+                    <SectionTitle>Minősítések</SectionTitle>
+                    <List>
+                        <Item>Scrimba Front End Developer Career Path, 2021, október</Item>
+                    </List>
+                </DoubleBox>
+            </Group>
+            <Group>
+                {/* <Parallax translateX={["-800px", '700px']}> */}
+                    <Box>
+                        <SectionTitle>Érdeklődési köreim</SectionTitle>
                         <List>
-                            <Item>Széchenyi István Egyetem, Mérnökinformatikus BSc -- 2021. Február -</Item>
-                            <Item>Széchenyi István Gimnázium, Sopron, Érettségi bizonyítvány -- 2014. Szeptember - 2020. Május</Item>
+                            <Item>Tisztában lenni a legújabb technológiákkal</Item>
+                            <Item>Csillagászat és űrkutatás</Item>
+                            <Item>Tudományos fantasztikus regények és filmek</Item>
+                            <Item>Gaming</Item>
+                            <Item>Hegymászás és biciklizés</Item>
                         </List>
-                    </DoubleBox>
-                </Group>
-                <Group>
-                    <DoubleBox>
-                        <SectionTitle>Minősítések</SectionTitle>
-                        <List>
-                            <Item>Scrimba Front End Developer Career Path, 2021, október</Item>
-                        </List>
-                    </DoubleBox>
-                </Group>
-                <Group>
-                    <Parallax translateX={["-800px", '700px']}>
-                        <Box>
-                            <SectionTitle>Érdeklődési köreim</SectionTitle>
-                            <List>
-                                <Item>Tisztában lenni a legújabb technológiákkal</Item>
-                                <Item>Csillagászat és űrkutatás</Item>
-                                <Item>Tudományos fantasztikus regények és filmek</Item>
-                                <Item>Gaming</Item>
-                                <Item>Hegymászás és biciklizés</Item>
-                            </List>
-                        </Box>
-                    </Parallax>
-                    <Parallax translateX={["800px", '-700px']}>
-                        <Box>
-                            <Tapasztalat>Tapasztalat</Tapasztalat>
-                            <Textbox>
-                                A Menedék Programozó Klub tagjaként, valamint egyénileg is több versenyen 
-                                is indultam. Ezek közül főleg csapatban tudtunk eredményesen szerepelni, 
-                                retró játékkonzolokra írt játékainkkal.
-                            </Textbox>
-                        </Box>
-                    </Parallax>
-                </Group>
-            </Container>
-        </ParallaxProvider>
+                    </Box>
+                {/* </Parallax> */}
+                {/* <Parallax translateX={["800px", '-700px']}> */}
+                    <Box>
+                        <Tapasztalat>Tapasztalat</Tapasztalat>
+                        <Textbox>
+                            A Menedék Programozó Klub tagjaként, valamint egyénileg is több versenyen 
+                            is indultam. Ezek közül főleg csapatban tudtunk eredményesen szerepelni, 
+                            retró játékkonzolokra írt játékainkkal.
+                        </Textbox>
+                    </Box>
+                {/* </Parallax> */}
+            </Group>
+        </Container>
     )
 }

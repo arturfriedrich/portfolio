@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    @font-face {
+        font-family: -apple-system;
+        src: url("SF.Pro.dmg");
+    }
 }
 
 body {

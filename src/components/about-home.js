@@ -74,26 +74,24 @@ const Link = styled.a``
 
 export default function AboutHome() {
     return (
-        <ParallaxProvider>
-            <Container>
-                <Parallax translateX={["-800px", '20px']} easing='easeOutQuad' opacity={[0, 1]}>
-                    <Title>About</Title>
-                </Parallax>
-                <Group>
-                    <Parallax translateX={["-300px", '150px']} easing='easeOutQuad' opacity={[0, 1]}>
-                        <Image src={require("../images/misc/peep-standing.png")} />
-                    </Parallax>
-                    <Parallax translateX={["250px", '-20px']} easing='easeOutQuad' >
-                        <TextBox>
-                            <Text>
-                                My name is Artúr Friedrich, I started learning web developemt  in February of 2021.<br /><br /> 
-                                I write programs for 4 years not and I am currently a Computer Science student at the 
-                                University of Győr, and want to get some experience working in the tech industry.
-                            </Text>
-                        </TextBox>
-                    </Parallax>
-                </Group>
-            </Container>
-        </ParallaxProvider>
+        <Container>
+            {/* <Parallax translateX={["-800px", '20px']} easing='easeOutQuad' opacity={[0, 1]}> */}
+                <Title>About</Title>
+            {/* </Parallax> */}
+            <Group>
+                {/* <Parallax translateX={["-300px", '150px']} easing='easeOutQuad' opacity={[0, 1]}> */}}
+                    <Image src={require("../images/misc/peep-standing.png")} />
+                {/* </Parallax> */}
+                {/* <Parallax translateX={["250px", '-20px']} easing='easeOutQuad' > */}
+                    <TextBox>
+                        <Text>
+                            My name is Artúr Friedrich, I started learning web developemt  in February of 2021.<br /><br /> 
+                            I write programs for 4 years not and I am currently a Computer Science student at the 
+                            University of Győr, and want to get some experience working in the tech industry.
+                        </Text>
+                    </TextBox>
+                {/* </Parallax> */}
+            </Group>
+        </Container>
     )
 }

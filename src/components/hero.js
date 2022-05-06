@@ -118,18 +118,16 @@ const Image = styled.img`
 
 export default function Hero() {
     return (
-        <ParallaxProvider>
             <Container>
-                <Parallax translateX={["200px", '-200px']}>
+                {/* <Parallax translateX={["200px", '-200px']}> */}
                     <Group>
                         <Title>Hello.<br />I am <Accent>Artúr</Accent></Title>
                         <SubTitle>Student and Front End Developer</SubTitle>
                     </Group>
-                </Parallax>
-                <Parallax translateX={["-200px", '200px']}>
+                {/* </Parallax> */}
+                {/* <Parallax translateX={["-200px", '200px']}> */}
                     <Image src={require("../images/misc/peep.png")} />
-                </Parallax>
+                {/* </Parallax> */}
             </Container>
-        </ParallaxProvider>
     )
 }
