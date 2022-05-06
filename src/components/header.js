@@ -108,7 +108,7 @@ export default function Header() {
                     <Link to={ROUTES.ABOUT}><Menu>About</Menu></Link>
                     <Link to={ROUTES.PROJECTS}><Menu>Projects</Menu></Link>
                     <Link to={ROUTES.RESUME}><Menu>Resume</Menu></Link>
-                    <Link to={ROUTES.CONTACT}><Menu>Contact</Menu></Link>     
+                    {/*<Link to={ROUTES.CONTACT}><Menu>Contact</Menu></Link>*/}     
                 </Group>
                 <Group>
                     <CustomLink href="https://github.com/arturfriedrich">

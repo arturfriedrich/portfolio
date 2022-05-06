@@ -16,7 +16,7 @@ const Container = styled.div`
 const Group = styled.div`
     display: flex;
 
-    @keyframes slideInRight {
+    @keyframes slideInUp {
         0% {
         transform: translateY(100%);
         }
@@ -25,7 +25,7 @@ const Group = styled.div`
         }
     }
 
-    &:first-of-type { animation: 1s ease-out 0s 1 slideInRight };
+    &:first-of-type { animation: 1s ease-out 0s 1 slideInUp };
 `
 
 const Title = styled.h1`
