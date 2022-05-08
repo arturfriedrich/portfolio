@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.5e824e8e.js",
+    "main.js": "/portfolio/static/js/main.5134cfeb.js",
     "static/media/netflix-project.png": "/portfolio/static/media/netflix-project.6d14e0e20f9c9381033d.png",
     "static/media/role-play.png": "/portfolio/static/media/role-play.f5aa01e06d20d054966e.png",
     "static/media/quizzical-app.png": "/portfolio/static/media/quizzical-app.c920771d480de7542b39.png",
@@ -12,9 +12,9 @@
     "static/media/wall.png": "/portfolio/static/media/wall.d9cf16a511528486a633.png",
     "static/media/peep.png": "/portfolio/static/media/peep.e9f9706b17632a527fcd.png",
     "index.html": "/portfolio/index.html",
-    "main.5e824e8e.js.map": "/portfolio/static/js/main.5e824e8e.js.map"
+    "main.5134cfeb.js.map": "/portfolio/static/js/main.5134cfeb.js.map"
   },
   "entrypoints": [
-    "static/js/main.5e824e8e.js"
+    "static/js/main.5134cfeb.js"
   ]
 }
