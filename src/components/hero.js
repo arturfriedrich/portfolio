@@ -24,6 +24,7 @@ const Title = styled.h1`
     line-height: 83px;
     margin: 0;
     margin-top: -75px;
+    margin-bottom: .1em;
     color: #DBD8E3;
 
     @keyframes slideInRight {
@@ -121,8 +122,8 @@ export default function Hero() {
             <Container>
                 {/* <Parallax translateX={["200px", '-200px']}> */}
                     <Group>
-                        <Title>Hello.<br />I am <Accent>Artúr</Accent></Title>
-                        <SubTitle>Student and Front End Developer</SubTitle>
+                        <Title>{/* Hello. */}Szia.<br />{/* I am */}<Accent>Artúr</Accent> vagyok</Title>
+                        <SubTitle>{/* Student and Front End Developer */}Tanuló és front end fejlesztő</SubTitle>
                     </Group>
                 {/* </Parallax> */}
                 {/* <Parallax translateX={["-200px", '200px']}> */}

@@ -76,7 +76,7 @@ export default function AboutHome() {
     return (
         <Container>
             {/* <Parallax translateX={["-800px", '20px']} easing='easeOutQuad' opacity={[0, 1]}> */}
-                <Title>About</Title>
+                <Title>{/* About */}Rólam</Title>
             {/* </Parallax> */}
             <Group>
                 {/* <Parallax translateX={["-300px", '150px']} easing='easeOutQuad' opacity={[0, 1]}> */}}
@@ -85,9 +85,11 @@ export default function AboutHome() {
                 {/* <Parallax translateX={["250px", '-20px']} easing='easeOutQuad' > */}
                     <TextBox>
                         <Text>
-                            My name is Artúr Friedrich, I started learning web developemt  in February of 2021.<br /><br /> 
+                            {/* My name is Artúr Friedrich, I started learning web developemt  in February of 2021.<br /><br /> 
                             I write programs for 4 years not and I am currently a Computer Science student at the 
-                            University of Győr, and want to get some experience working in the tech industry.
+                            University of Győr, and want to get some experience working in the tech industry. */}
+                            A nevem Friedrich Artúr, több mint egy éve foglalkozok webfejlesztéssel, a tanulást 2021 februárjában kezdtem. <br /><br />
+                            5 évvel ezelőtt írtam az első programomat egy gimnáziumi informatika órán. Jelenleg a Széchenyi István Egyetem hallgatója vagyok mérnökinformatikus szakon.
                         </Text>
                     </TextBox>
                 {/* </Parallax> */}

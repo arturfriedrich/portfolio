@@ -89,9 +89,9 @@ export default function ProjectCard(props) {
             <Image src={props.image} alt={props.alt} />
             <Wrapper>
                 <Title>{props.title}</Title>
-                <Description>{props.description}</Description>
+                <Description>{props.leiras}</Description>
                 <Group>
-                    <Button href={props.liveDemoUrl}>Live Demo</Button>
+                    {props.liveDemoUrl ? <Button href={props.liveDemoUrl}>{/* Live Demo */}Próbáld ki</Button> : null}
                     <Button href={props.gitHubUrl}>GitHub</Button>
                 </Group>
             </Wrapper>

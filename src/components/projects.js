@@ -64,7 +64,7 @@ export default function Projects() {
 
     return (
         <Container>
-            <Title>Projects</Title>
+            <Title>{/* Projects */}Projektek</Title>
             <Subtitle>React</Subtitle>
             <Group>
                 {cards.slice(0, 3)}
@@ -72,6 +72,10 @@ export default function Projects() {
             <Subtitle>JavaScript</Subtitle>
             <Group>
                 {cards.slice(3, 6)}
+            </Group>
+            <Subtitle>Egyéb</Subtitle>
+            <Group>
+                {cards.slice(6, 9)}
             </Group>
         </Container>
     )

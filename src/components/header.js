@@ -105,9 +105,9 @@ export default function Header() {
                     <Logo>Friedrich Artúr</Logo>
                 </Link>
                 <Group>
-                    <Link to={ROUTES.ABOUT}><Menu>About</Menu></Link>
-                    <Link to={ROUTES.PROJECTS}><Menu>Projects</Menu></Link>
-                    <Link to={ROUTES.RESUME}><Menu>Resume</Menu></Link>
+                    <Link to={ROUTES.ABOUT}><Menu>{/* About */}Rólam</Menu></Link>
+                    <Link to={ROUTES.PROJECTS}><Menu>{/* Projects */}Projektek</Menu></Link>
+                    <Link to={ROUTES.RESUME}><Menu>{/* Resume */}Önéletrajz</Menu></Link>
                     {/*<Link to={ROUTES.CONTACT}><Menu>Contact</Menu></Link>*/}     
                 </Group>
                 <Group>

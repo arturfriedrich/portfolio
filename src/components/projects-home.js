@@ -1,10 +1,12 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import { Link as ReachRouterLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { Parallax, ParallaxProvider } from "react-scroll-parallax"
 
 import ProjectCard from "./project-card"
 import { ProjectsData } from "../data/projects"
+import * as ROUTES from "../constants/routes"
+
 
 // styled components
 const Container = styled.div`
@@ -32,7 +34,7 @@ const Title = styled.h1`
     color: #DBD8E3;
 `
 
-const Button = styled.a`
+const Button = styled.div`
     background-color: #FFB703;
     border-radius: 20px;
     color: #2A2438;
@@ -47,6 +49,8 @@ const Button = styled.a`
     text-align: center;
     margin-top: 60px;
     cursor: pointer;
+
+    text-decoration: none;
 
     &:hover {
         background-color: #DBD8E3;
@@ -71,7 +75,7 @@ export default function ProjectsHome() {
     return (
             <Container>
                 {/* <Parallax translateX={["800px", '-20px']} easing='easeOutQuad' opacity={[0, 1]}> */}
-                    <Title>Projects</Title>
+                    <Title>{/* Projects */}Projektek</Title>
                 {/* </Parallax> */}
                 {/* <Parallax translateY={["750px", '-250px']} easing='easeOutQuad' opacity={[0, 1]}> */}
                     <Group>
@@ -79,7 +83,11 @@ export default function ProjectsHome() {
                     </Group>
                 {/* </Parallax> */}
                 {/* <Parallax opacity={[.5, 1]}> */}
-                    <Button>More Projects</Button>
+                    <Link to={ROUTES.PROJECTS}>
+                        <Button >
+                            {/* More Projects */}Mutass többet
+                        </Button>
+                    </Link>
                 {/* </Parallax> */}
             </Container>
     )
