@@ -199,7 +199,7 @@ export default function Resume() {
                 {/* <Parallax translateX={["480px", '-340px']}> */}
                     <Box>
                         <Title>Friedrich Artúr</Title>
-                        <Subtitle>Student and Front End Developer</Subtitle>
+                        <Subtitle>Tanuló és front end fejlesztő</Subtitle>
                     </Box>
                 {/* </Parallax> */}
                 {/* <Parallax translateX={["-560px", '400px']}> */}
