@@ -3,4 +3,5 @@
     height: 10px;
     align-items:baseline ;
     text-decoration: none;
+    flex-direction: row;
 }

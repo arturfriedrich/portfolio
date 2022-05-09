@@ -37,8 +37,7 @@ const Title = styled.h1`
 const Button = styled.div`
     background-color: #FFB703;
     border-radius: 20px;
-    color: #2A2438;
-    padding: 20px 40px;
+    padding: 15px 40px;
 
     font-weight: 800;
     font-size: 20px;
@@ -47,7 +46,6 @@ const Button = styled.div`
     display: flex;
     align-items: center;
     text-align: center;
-    margin-top: 60px;
     cursor: pointer;
 
     text-decoration: none;
@@ -58,6 +56,14 @@ const Button = styled.div`
         -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
         -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
     }
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 50px;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
 `
 
 export default function ProjectsHome() {
@@ -84,7 +90,7 @@ export default function ProjectsHome() {
                 {/* </Parallax> */}
                 {/* <Parallax opacity={[.5, 1]}> */}
                     <Link to={ROUTES.PROJECTS}>
-                        <Button >
+                        <Button>
                             {/* More Projects */}Mutass többet
                         </Button>
                     </Link>

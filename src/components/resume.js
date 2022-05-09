@@ -78,9 +78,6 @@ const Title = styled.p`
     margin-left: 20px;
     margin-top: 20px;
 
-    display: flex;
-    align-items: center;
-
     color: #FFFFFF;
 `
 
@@ -106,9 +103,9 @@ const Text = styled.p`
     line-height: 27px;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 
     color: #FFFFFF;
 `
@@ -192,6 +189,46 @@ const Tapasztalat = styled(SectionTitle)`
     margin-top: 55px;
 `
 
+const Icon = styled.img`
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+    height: 24px;
+    width: 24px;
+    margin: 20px;
+`
+
+const Contact = styled.p`
+    display: flex;
+    flex-direction: row;
+    margin: -15px;
+`
+
+const Button = styled.a`
+    background-color: #FFB703;
+    border-radius: 20px;
+    color: #2A2438;
+    padding: 20px 40px;
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 0px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    cursor: pointer;
+
+    text-decoration: none;
+
+    &:hover {
+        background-color: #DBD8E3;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    }
+`
+
 export default function Resume() {
     return (
         <Container>
@@ -205,11 +242,26 @@ export default function Resume() {
                 {/* <Parallax translateX={["-560px", '400px']}> */}
                     <Box>
                         <Text>
-                            artur.friedrich.harka@gmail.com <br />
-                            artur#5667 <br />
-                            Győr, Hungary <br />
-                            linkedin.com/friedrich-artur <br />
-                            github.com/friedrichartur
+                            <Contact>
+                                <Icon src={require("../images/icons/email.png")} />
+                                <p>artur.friedrich.harka@gmail.com</p>
+                            </Contact>
+                            <Contact>
+                                <Icon src={require("../images/icons/discord.png")} />
+                                <p>artur#5667</p>
+                            </Contact>
+                            <Contact>
+                                <Icon src={require("../images/icons/pin.png")} />
+                                <p>Győr, Hungary</p>
+                            </Contact>
+                            <Contact>
+                                <Icon src={require("../images/icons/icons8-linkedin-24.png")} />
+                                <p>linkedin.com/friedrich-artur</p>
+                            </Contact>
+                            <Contact>
+                                <Icon src={require("../images/icons/icons8-github-24.png")} />
+                                <p>github.com/friedrichartur</p>
+                            </Contact>
                         </Text>
                     </Box>
                 {/* </Parallax> */}
@@ -285,6 +337,7 @@ export default function Resume() {
                     </Box>
                 {/* </Parallax> */}
             </Group>
+            <Button href={require("../data/friedrich_artur_oneletrajz.pdf")} target="_blank">Önéletrajz</Button>
         </Container>
     )
 }
