@@ -3,11 +3,12 @@ import styled from "styled-components"
 import { Parallax, ParallaxProvider } from "react-scroll-parallax"
 import { Link as ReachRouterLink } from "react-router-dom"
 
+
 // styled components
 const Container = styled.div`
     display: flex;
     height: 75px;
-    background-color: #2A2438;
+    background-color: "#2A2438";
     justify-content: space-between;
     align-items: center;
     height: calc(100vh - 75px);
@@ -15,7 +16,7 @@ const Container = styled.div`
 `
 
 const Group = styled.div`
-    margin-left: 100px;  
+    margin-left: 8rem;  
 `
 
 const Title = styled.h1`
@@ -103,7 +104,7 @@ const Image = styled.img`
     width: 320px;
     height: 432px;
     margin-top: -75px;
-    margin-right: 100px;
+    margin-right: 8rem;
 
     @keyframes slideInLeft {
         0% {
@@ -115,6 +116,10 @@ const Image = styled.img`
     }
 
     animation: 1s ease-out 0s 1 slideInLeft;
+
+    @media (max-width: 600px) {
+        visibility: hidden;
+    }
 `
 
 export default function Hero() {

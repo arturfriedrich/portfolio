@@ -3,12 +3,13 @@ import styled from "styled-components"
 import { Link  } from "react-router-dom"
 
 import * as ROUTES from "../constants/routes"
+import {useChangeTheme} from "../context/theme"
 
 // styled components
 const Container = styled.div`
     display: flex;
     height: 75px;
-    background-color: #2A2438;
+    background-color: "#2A2438";
     justify-content: space-between;
     align-items: center;
 
@@ -99,6 +100,13 @@ const Icon = styled.img`
 const CustomLink = styled.a``
 
 export default function Header() {
+    const [lightTheme, setLightTheme] = useState(false)
+
+    function changeTheme() {
+        setLightTheme(prevTheme => !prevTheme)
+        console.log(lightTheme)
+    }
+
     return (
             <Container>
                 <Link to={ROUTES.HOME}>

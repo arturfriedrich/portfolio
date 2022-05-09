@@ -21,7 +21,6 @@ const Group = styled.div`
     flex-basis: auto;
     heigth: 100%;
     margin-bottom: 110px;
-    gap: 150px;
 `
 
 const TextBox = styled.div`
@@ -38,6 +37,8 @@ const TextBox = styled.div`
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+    
+    margin-left: 15rem;
 
     &:hover {
         transform: scale(1.01);
@@ -79,7 +80,7 @@ export default function AboutHome() {
                 <Title>{/* About */}Rólam</Title>
             {/* </Parallax> */}
             <Group>
-                {/* <Parallax translateX={["-300px", '150px']} easing='easeOutQuad' opacity={[0, 1]}> */}}
+                {/* <Parallax translateX={["-300px", '150px']} easing='easeOutQuad' opacity={[0, 1]}> */}
                     <Image src={require("../images/misc/peep-standing.png")} />
                 {/* </Parallax> */}
                 {/* <Parallax translateX={["250px", '-20px']} easing='easeOutQuad' > */}
