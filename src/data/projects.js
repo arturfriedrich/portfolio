@@ -6,7 +6,7 @@ export const ProjectsData = [
         title: "Netflix Clone",
         description: "This is a Clone of the famous streaming app: Netflix. I used styled-components and firebase along to React to create this project.",
         leiras: "A méltán híressé vált streaming szolgáltatóról, a Netflixről mintázott oldal. A felhasználói felület és funkciók megalkotását Reactban, míg az autentikációt Firebase-el valósítottam meg.",
-        liveDemoUrl: "https://arturfriedrich.github.io/",
+        liveDemoUrl: "https://arturfriedrich.github.io/netflix-clone/",
         gitHubUrl: "https://github.com/arturfriedrich/netflix-clone"
     },
     {

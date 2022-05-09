@@ -256,7 +256,7 @@ export default function Resume() {
                             </Contact>
                             <Contact>
                                 <Icon src={require("../images/icons/icons8-linkedin-24.png")} />
-                                <p>linkedin.com/friedrich-artur</p>
+                                <p>linkedin.com/in/friedrichartur</p>
                             </Contact>
                             <Contact>
                                 <Icon src={require("../images/icons/icons8-github-24.png")} />
