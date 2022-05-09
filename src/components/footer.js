@@ -56,9 +56,9 @@ export default function Footer() {
     return (
         <Container>
             <Group>
-                <Link href={"https://github.com/arturfriedrich"}>GitHub</Link>
-                <Link href={"https://twitter.com/arturfriedrich7"}>Twitter</Link>
-                <Link href={"https://www.linkedin.com/in/friedrich-art%C3%BAr-6840201a1/"}>LinkedIn</Link>
+                <Link href={"https://github.com/arturfriedrich"} target="_blank">GitHub</Link>
+                <Link href={"https://twitter.com/arturfriedrich7"} target="_blank">Twitter</Link>
+                <Link href={"https://www.linkedin.com/in/friedrich-art%C3%BAr-6840201a1/"} target="_blank">LinkedIn</Link>
             </Group>
             <Text>This page was created by Artúr Friedrich. 2022</Text>
         </Container>

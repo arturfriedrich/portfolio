@@ -119,13 +119,13 @@ export default function Header() {
                     {/*<Link to={ROUTES.CONTACT}><Menu>Contact</Menu></Link>*/}     
                 </Group>
                 <Group>
-                    <CustomLink href="https://github.com/arturfriedrich">
+                    <CustomLink href="https://github.com/arturfriedrich" target="_blank">
                         <Icon src={require("../images/icons/icons8-github-24.png")} />
                     </CustomLink>
-                    <CustomLink href="https://twitter.com/arturfriedrich7">
+                    <CustomLink href="https://twitter.com/arturfriedrich7" target="_blank">
                         <Icon src={require("../images/icons/icons8-twitter-24.png")} />
                     </CustomLink>
-                    <CustomLink href="https://www.linkedin.com/in/friedrich-art%C3%BAr-6840201a1/">
+                    <CustomLink href="https://www.linkedin.com/in/friedrich-art%C3%BAr-6840201a1/" target="_blank">
                         <Icon src={require("../images/icons/icons8-linkedin-24.png")} />
                     </CustomLink>
                 </Group>

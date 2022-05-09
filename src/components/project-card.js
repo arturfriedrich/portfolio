@@ -91,8 +91,8 @@ export default function ProjectCard(props) {
                 <Title>{props.title}</Title>
                 <Description>{props.leiras}</Description>
                 <Group>
-                    {props.liveDemoUrl ? <Button href={props.liveDemoUrl}>{/* Live Demo */}Próbáld ki</Button> : null}
-                    <Button href={props.gitHubUrl}>GitHub</Button>
+                    {props.liveDemoUrl ? <Button href={props.liveDemoUrl} target="_blank">{/* Live Demo */}Próbáld ki</Button> : null}
+                    <Button href={props.gitHubUrl} target="_blank">GitHub</Button>
                 </Group>
             </Wrapper>
         </Container>
