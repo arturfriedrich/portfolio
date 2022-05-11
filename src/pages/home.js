@@ -2,10 +2,10 @@ import React from "react"
 
 import { Header, Hero, AboutHome, ProjectsHome, Footer } from "../components"
 
-export default function Home() {
+export default function Home(props) {
     return (
         <>
-            <Header />
+            <Header changeTheme={props.changeTheme} />
             <Hero />
             <AboutHome />
             <ProjectsHome />

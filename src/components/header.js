@@ -99,14 +99,7 @@ const Icon = styled.img`
 
 const CustomLink = styled.a``
 
-export default function Header() {
-    const [lightTheme, setLightTheme] = useState(false)
-
-    function changeTheme() {
-        setLightTheme(prevTheme => !prevTheme)
-        console.log(lightTheme)
-    }
-
+export default function Header(props) {
     return (
             <Container>
                 <Link to={ROUTES.HOME}>
@@ -116,7 +109,7 @@ export default function Header() {
                     <Link to={ROUTES.ABOUT}><Menu>{/* About */}Rólam</Menu></Link>
                     <Link to={ROUTES.PROJECTS}><Menu>{/* Projects */}Projektek</Menu></Link>
                     <Link to={ROUTES.RESUME}><Menu>{/* Resume */}Önéletrajz</Menu></Link>
-                    {/*<Link to={ROUTES.CONTACT}><Menu>Contact</Menu></Link>*/}     
+                    {/* <Link to={ROUTES.CONTACT}><Menu>Contact</Menu></Link> */}  
                 </Group>
                 <Group>
                     <CustomLink href="https://github.com/arturfriedrich" target="_blank">
@@ -128,6 +121,7 @@ export default function Header() {
                     <CustomLink href="https://www.linkedin.com/in/friedrich-art%C3%BAr-6840201a1/" target="_blank">
                         <Icon src={require("../images/icons/icons8-linkedin-24.png")} />
                     </CustomLink>
+                    <Icon onClick={props.changeTheme} src={require("../images/icons/icons8-sun-24.png")} />
                 </Group>
             </Container>
     )
